@@ -1,22 +1,30 @@
 {
-  "name": "quark",
+  "name": "webtesting_intro_labs",
   "version": "1.1.1",
-  "description": "Fundamental project template",
+  "description": "Fundamental testing laboratory",
   "author": {
     "name": "Alberto Basalo",
-    "email": "albertobasalo@agorabinaria.com",
+    "email": "learn@bitademy.com",
     "url": "https://twitter.com/albertobasalo"
   },
-  "homepage": "https://github.com/AtomicBuilders/quark#readme",
+  "homepage": "https://github.com/AtomicBuilders/webtesting_intro_labs#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AtomicBuilders/quark.git"
+    "url": "git+https://github.com/AtomicBuilders/webtesting_intro_labs.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AtomicBuilders/quark/issues"
+    "url": "https://github.com/AtomicBuilders/webtesting_intro_labs/issues"
   },
   "scripts": {
+    "test": "node ./src/main.test.js",
+    "test0": "node ./src/main.0.test.js",
+    "test1": "node ./src/main1.test.js",
+    "test11": "node ./src/main1.1.test.js",
+    "test2": "node ./src/main2.test.js",
+    "test3": "node ./src/main3.test.js",
+    "test4": "node ./src/main4.test.js",
+    "testrun": "node test.js ./main.test.js",
     "release": "standard-version"
   },
   "devDependencies": {
