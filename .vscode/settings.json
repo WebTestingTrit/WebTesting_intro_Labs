@@ -31,6 +31,13 @@
   "html.format.enable": true,
   "html.format.wrapLineLength": 100,
   "eslint.validate": ["javascript"],
-  "spellright.language": ["en", "es"],
-  "spellright.documentTypes": ["markdown", "latex", "plaintext"]
+  "spellright.language": [
+    "en"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext",
+    "javascript"
+  ]
 }
