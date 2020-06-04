@@ -22,7 +22,7 @@ const assertEqual = (actual, expected) => {
   if (actual === expected) {
     console.log(`${tab}${tab}✅${tab}Passed`);
   } else {
-    console.log(`${tab}${tab}❌${tab}Fail: Expected: ${expected} but got ${actual}`);
+    console.log(`${tab}${tab}❌${tab}Failed: Expected: ${expected} but got ${actual}`);
   }
 };
 global.assertEqual = assertEqual;
