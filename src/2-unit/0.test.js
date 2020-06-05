@@ -1,4 +1,4 @@
-const { test, expect } = require('./unit.tester');
+const { test, expect } = require('../testers/simple.tester');
 const { Account } = require('./account');
 
 test('a new account with no constructor parameter', () => {
