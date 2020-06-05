@@ -1,6 +1,10 @@
 exports.test = function (given, assert) {
   console.group(`GIVEN: ${given}`);
-  assert();
+  try {
+    assert();
+  } catch (e) {
+    console.log(`❌ FAILED: ${e.message}`);
+  }
   console.groupEnd();
 };
 

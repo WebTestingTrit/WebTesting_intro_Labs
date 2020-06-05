@@ -6,8 +6,10 @@
 
 ## 2.2 withdraw logic
 
+## 2.3 balance, faking clerk
+
 ### To Do:
 
-#### Ensure balance
-
 #### Unit test the Transactions object
+
+#### Review Given Should messages

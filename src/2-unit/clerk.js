@@ -1,11 +1,11 @@
 exports.Clerk = class Clerk {
-  constructor(credit, transactions) {
+  constructor(credit = 100, transactions) {
     this._credit = credit;
     this._transactions = transactions;
   }
   calculateBalance() {
     let balance = 0;
-    this._transactions.forEach(transaction => {
+    this._transactions.getAll().forEach(transaction => {
       switch (transaction.type) {
         case 'deposit':
           balance += transaction.amount;

@@ -3,7 +3,7 @@ const { Transactions } = require('./transactions');
 exports.Account = class Account {
   constructor(credit = 100) {
     this._transactions = new Transactions();
-    this._clerk = new Clerk(credit, this._transactions.getAll());
+    this._clerk = new Clerk(credit, this._transactions);
   }
   deposit(amount) {
     this._transactions.store({ type: 'deposit', amount });

@@ -2,11 +2,12 @@ const { test, expect } = require('./unit.tester');
 const { Account } = require('./account');
 
 test('a new account with more withdraw than deposited transactions', () => {
-  const sut = new Account();
+  const inputCredit = 10;
+  const sut = new Account(inputCredit);
   sut._transactions = getTransactionsFake();
   let actual = true;
   try {
-    sut.withdraw(20);
+    sut.withdraw(2);
   } catch (e) {
     actual = false;
   }
