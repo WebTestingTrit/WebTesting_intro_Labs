@@ -8,8 +8,4 @@
 
 ## 2.3 balance, faking clerk
 
-### To Do:
-
-#### Unit test the Transactions object
-
-#### Review Given Should messages
+## 2.4 Unit test the Transactions object
