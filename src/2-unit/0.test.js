@@ -1,5 +1,5 @@
-const { test, expect } = require('../testers/simple.tester');
-const { Account } = require('./account');
+const { test, expect } = require('../../utils/bit.tester');
+const { Account } = require('./bank/account');
 
 test('a new account with no constructor parameter', () => {
   const sut = new Account();

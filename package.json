@@ -17,14 +17,6 @@
     "url": "https://github.com/AtomicBuilders/webtesting_intro_labs/issues"
   },
   "scripts": {
-    "test": "node ./src/main.test.js",
-    "test0": "node ./src/main.0.test.js",
-    "test1": "node ./src/main1.test.js",
-    "test11": "node ./src/main1.1.test.js",
-    "test2": "node ./src/main2.test.js",
-    "test3": "node ./src/main3.test.js",
-    "test4": "node ./src/main4.test.js",
-    "testrun": "node test.js ./main.test.js",
     "release": "standard-version",
     "format:fix": "npm run format -- --write",
     "check-updates": "ncu -u"

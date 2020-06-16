@@ -1,4 +1,4 @@
-exports.test = function ({ given, should, actual, expected }) {
+const test = function test({ given, should, actual, expected }) {
   console.group(`GIVEN: ${given}`);
   console.log(`SHOULD: ${should}`);
   if (actual === expected) {
@@ -8,3 +8,13 @@ exports.test = function ({ given, should, actual, expected }) {
   }
   console.groupEnd();
 };
+
+let assert = {
+  given: 'an add expression with 1, 2',
+  should: 'return 3',
+  actual: 1 + 2,
+  expected: 3
+};
+test(assert);
+
+exports.test = test;

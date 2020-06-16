@@ -1,6 +1,8 @@
 const { test } = require('../testers/pure.tester');
 const { add, subtract } = require('./pure');
 
+// import test
+
 let assert;
 
 assert = {

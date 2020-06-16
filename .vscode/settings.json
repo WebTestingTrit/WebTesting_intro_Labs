@@ -21,7 +21,7 @@
   },
   "peacock.color": "#f9e64f",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Night Owl",
+  "workbench.colorTheme": "Eva Dark Bold",
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "prettier.useEditorConfig": true,

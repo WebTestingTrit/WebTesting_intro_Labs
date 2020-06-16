@@ -1,5 +1,7 @@
 const { add, subtract } = require('./pure');
 
+// actual and expected
+
 let actual;
 let expected;
 

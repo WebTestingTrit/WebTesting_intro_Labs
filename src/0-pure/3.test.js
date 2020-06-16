@@ -1,4 +1,7 @@
 const { add, subtract } = require('./pure');
+
+// test(assert)
+
 let assert;
 
 assert = {
