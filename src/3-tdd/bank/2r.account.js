@@ -1,4 +1,4 @@
-const { Clerk } = require('./2.1.clerk');
+const { Clerk } = require('./2r.clerk');
 
 exports.Account = class Account {
   constructor(credit = 100) {

@@ -1,4 +1,4 @@
-const { test, expect } = require('../testers/simple.tester');
+const { test, expect } = require('../../utils/bit.tester');
 const { Transactions } = require('./transactions');
 
 test('a transactions manager when store one transaction', () => {

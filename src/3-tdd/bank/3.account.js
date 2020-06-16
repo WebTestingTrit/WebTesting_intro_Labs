@@ -1,4 +1,4 @@
-const { Clerk } = require('./2.1.clerk');
+const { Clerk } = require('./3.clerk');
 
 exports.Account = class Account {
   constructor(credit = 100) {
@@ -16,6 +16,7 @@ exports.Account = class Account {
       throw 'credit insuffient';
     }
     this._balance -= amount;
+    this._transactions.push({});
   }
   getBalance() {
     return this._balance;

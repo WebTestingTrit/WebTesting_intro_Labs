@@ -1,5 +1,5 @@
-const { test, expect } = require('../testers/simple.tester');
-const { Account } = require('./1.account');
+const { test, expect } = require('../../utils/bit.tester');
+const { Account } = require('./bank/1.account');
 
 test('a new account with a deposit', () => {
   const sut = new Account();

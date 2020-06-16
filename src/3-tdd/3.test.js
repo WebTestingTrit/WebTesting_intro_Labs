@@ -1,13 +1,13 @@
-const { test, expect } = require('../testers/simple.tester');
-const { Account } = require('./3.account');
+const { test, expect } = require('../../utils/bit.tester');
+const { Account } = require('./bank/3.account');
 
 // To Do: write requirements before
 
 test('an account can save a transaction', () => {
   const sut = new Account();
-  sut.deposit( 10 );
+  sut.deposit(10);
   let actual = sut.getBalance();
-  const expected = 5;
+  const expected = 10;
   expect('and load it later', actual, expected);
 });
 
