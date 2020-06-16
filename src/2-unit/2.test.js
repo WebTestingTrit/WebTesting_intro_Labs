@@ -1,40 +1,47 @@
-const { test, expect } = require('../testers/simple.tester');
-const { Account } = require('./account');
+const { test, expect } = require('../../utils/bit.tester');
+const { Account } = require('./bank/account');
 
-test('a new account with more withdraw than deposited transactions', () => {
-  const inputCredit = 10;
-  const sut = new Account(inputCredit);
+test('a call to withdraw more than is allowed', () => {
+  const sut = new Account();
   sut._transactions = getTransactionsFake();
-  let actual = true;
-  try {
-    sut.withdraw(2);
-  } catch (e) {
-    actual = false;
-  }
-  const expected = true;
-  expect('have allowed the withdraw', actual, expected);
-});
-
-test('a new account with more withdraw than deposit and credit', () => {
-  const inputCredit = 10;
-  const sut = new Account(inputCredit);
-  sut._transactions = getTransactionsFake();
+  sut._clerk = getClerkFake();
   let actual = false;
   try {
-    sut.withdraw(20);
+    sut.withdraw(10);
   } catch (e) {
     actual = true;
   }
   const expected = true;
-  expect('throw an exception', actual, expected);
+  expect('throws an exception', actual, expected);
+});
+
+test('a call to balance', () => {
+  const sut = new Account();
+  sut._transactions = getTransactionsFake();
+  sut._clerk = getClerkFake();
+  let actual = sut.getBalance();
+  const expected = 10;
+  expect('return what clerk has calculated', actual, expected);
 });
 
 function getTransactionsFake() {
-  const transactionsSpy = {
+  const transactionsFake = {
     store() {},
     getAll() {
-      return [{ type: 'deposit', amount: 5 }];
+      return [];
     }
   };
-  return transactionsSpy;
+  return transactionsFake;
+}
+
+function getClerkFake() {
+  const clerkFake = {
+    calculateBalance() {
+      return 10;
+    },
+    isAllowed() {
+      return false;
+    }
+  };
+  return clerkFake;
 }

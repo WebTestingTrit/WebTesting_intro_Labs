@@ -1,22 +1,25 @@
-const { test, expect } = require('../testers/simple.tester');
-const { Account } = require('./account');
-const { Clerk } = require('./clerk');
+const { test, expect } = require('../../utils/bit.tester');
+const { Clerk } = require('./bank/clerk');
 
-test('a new account with one deposited transaction', () => {
-  const sut = new Account();
-  sut._clerk = new Clerk(100, getTransactionsFake());
-  let actual = sut.getBalance();
+test('a clerk object calculating balance', () => {
+  const sut = new Clerk(100, getTransactionsFake());
+  let actual = sut.calculateBalance();
   const expected = 5;
   expect('have the correct balance', actual, expected);
 });
 
-test('a new account with more transactions', () => {
-  const inputCredit = 10;
-  const sut = new Account(inputCredit);
-  sut._clerk = new Clerk(100, getTransactionsFake());
-  let actual = sut.getBalance();
-  const expected = 5;
-  expect('have the correct balance', actual, expected);
+test('a clerk object with enough balance and credit', () => {
+  const sut = new Clerk(100, getTransactionsFake());
+  let actual = sut.isAllowed(103);
+  const expected = true;
+  expect('allows the withdrawal', actual, expected);
+});
+
+test('a clerk object with not enough balance and credit', () => {
+  const sut = new Clerk(100, getTransactionsFake());
+  let actual = sut.isAllowed(108);
+  const expected = false;
+  expect('does not allow the withdrawal', actual, expected);
 });
 
 function getTransactionsFake() {
