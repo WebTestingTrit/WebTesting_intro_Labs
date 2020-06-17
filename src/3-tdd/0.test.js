@@ -1,5 +1,5 @@
 const { test, expect } = require('../../utils/bit.tester');
-const { Account } = require('./bank/0.account');
+const { Account } = require('./bank/account');
 test('a new account with no constructor parameter', () => {
   const sut = new Account();
   const actual = sut !== undefined;
@@ -19,6 +19,13 @@ test('a new account with credit parameter', () => {
   const actual = sut._credit;
   const expected = 100;
   expect('have stored the credit', actual, expected);
+});
+
+test('a new account with another credit parameter', () => {
+  const sut = new Account(50);
+  const actual = sut._credit;
+  const expected = 50;
+  expect('have stored the correct credit', actual, expected);
 });
 
 test('a new account with no credit ', () => {

@@ -13,7 +13,7 @@ exports.Account = class Account {
   }
   withdraw(amount) {
     if (this._clerk.isNotAllowed(amount, this._balance)) {
-      throw 'credit insuffient';
+      throw 'credit insufficient';
     }
     this._balance -= amount;
     this._transactions.push({});

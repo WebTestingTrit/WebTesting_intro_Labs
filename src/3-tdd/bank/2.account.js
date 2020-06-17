@@ -8,7 +8,7 @@ exports.Account = class Account {
   }
   withdraw(amount) {
     if (amount > this._balance + this._credit) {
-      throw 'credit insuffient';
+      throw 'credit insufficient';
     }
     this._balance -= amount;
   }

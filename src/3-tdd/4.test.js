@@ -1,5 +1,5 @@
 const { test, expect } = require('../../utils/bit.tester');
-const { Transactions } = require('./transactions');
+const { Transactions } = require('./bank/transactions');
 
 test('a transactions manager when store one transaction', () => {
   const sut = new Transactions();

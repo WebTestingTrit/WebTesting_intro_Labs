@@ -17,3 +17,5 @@
 #### transactions tdd
 
 #### refactor
+
+> Refactorizar y documentar según los videos
