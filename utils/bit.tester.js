@@ -1,4 +1,4 @@
-const test = function test(given, assert) {
+exports.test = function test(given, assert) {
   console.group(`GIVEN: ${given}`);
   try {
     assert();
@@ -8,7 +8,7 @@ const test = function test(given, assert) {
   console.groupEnd();
 };
 
-const expect = function expect(should, actual, expected) {
+exports.expect = function expect(should, actual, expected) {
   console.log(`SHOULD: ${should}`);
   if (actual === expected) {
     console.log(`✅ Passed`);
@@ -16,6 +16,3 @@ const expect = function expect(should, actual, expected) {
     console.log(`❌ FAILED: Expected: ${expected} but got ${actual}`);
   }
 };
-
-exports.test = test;
-exports.expect = expect;

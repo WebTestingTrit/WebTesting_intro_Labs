@@ -12,7 +12,7 @@ exports.Account = class Account {
     if (this._clerk.isAllowed(amount)) {
       this._transactions.store({ type: 'withdraw', amount });
     } else {
-      throw 'credit insufficient';
+      throw 'insufficient credit ';
     }
   }
   getBalance() {

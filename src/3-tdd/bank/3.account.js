@@ -1,10 +1,7 @@
-const { Clerk } = require('./3.clerk');
-
 exports.Account = class Account {
-  constructor(credit = 100) {
-    this._credit = credit;
+  constructor(clerk) {
     this._balance = 0;
-    this._clerk = new Clerk(credit);
+    this._clerk = clerk;
     this._transactions = new Array();
   }
   deposit(amount) {
@@ -13,7 +10,7 @@ exports.Account = class Account {
   }
   withdraw(amount) {
     if (this._clerk.isNotAllowed(amount, this._balance)) {
-      throw 'credit insufficient';
+      throw 'insufficient credit ';
     }
     this._balance -= amount;
     this._transactions.push({});

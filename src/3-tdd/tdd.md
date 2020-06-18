@@ -6,16 +6,4 @@
 
 ## 3.2 credit control
 
-## 3.2.1 clerk for credit control
-
-## 3.3 WIP store transactions
-
-### To Do:
-
-#### write requirements before
-
-#### transactions tdd
-
-#### refactor
-
-> Refactorizar y documentar según los videos
+## 3.3 clerk

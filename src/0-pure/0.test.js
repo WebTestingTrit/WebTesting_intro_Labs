@@ -1,7 +1,5 @@
 const { add, subtract } = require('./pure');
 
-// Console and if
-
 console.group(`It should sum 1 and 2 and returns 3`);
 if (add(1, 2) === 3) {
   console.log(`✅ Passed`);
