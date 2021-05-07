@@ -15,9 +15,7 @@
     "statusBar.background": "#f9e64f",
     "statusBarItem.hoverBackground": "#f7df1e",
     "statusBar.foreground": "#15202b",
-    "activityBar.activeBackground": "#fbed80",
-    "statusBar.border": "#f9e64f",
-    "titleBar.border": "#f9e64f"
+    "activityBar.activeBackground": "#fbed80"
   },
   "peacock.color": "#f9e64f",
   "workbench.iconTheme": "material-icon-theme",

@@ -19,14 +19,14 @@
   "scripts": {
     "release": "standard-version",
     "format:fix": "npm run format -- --write",
-    "check-updates": "ncu -u"
+    "updates": "ncu -u"
   },
   "devDependencies": {
-    "eslint": "^7.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.0.5",
-    "npm-check-updates": "^7.0.1",
-    "standard-version": "^8.0.1"
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.2.1",
+    "npm-check-updates": "^11.5.10",
+    "standard-version": "^9.3.0"
   }
 }
