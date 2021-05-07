@@ -1,6 +1,7 @@
-const { test, expect } = require('../../utils/bit.tester');
-const { Account } = require('./bank/3.account');
-const { Clerk } = require('./bank/3.clerk');
+import { expect, test } from '../../utils/bit.tester.js';
+import { Account } from './bank/3.account.js';
+import { Clerk } from './bank/3.clerk.js';
+
 test('a new account with more withdraw than deposit transactions', () => {
   const fakeClerk = {
     isNotAllowed(amount, balance) {

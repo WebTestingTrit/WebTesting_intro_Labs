@@ -1,4 +1,4 @@
-exports.Clerk = class Clerk {
+export class Clerk {
   constructor(credit = 100, transactions) {
     this._credit = credit;
     this._transactions = transactions;
@@ -23,4 +23,4 @@ exports.Clerk = class Clerk {
     const isAllowed = creeditNeeded <= this._credit;
     return isAllowed;
   }
-};
+}

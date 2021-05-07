@@ -1,4 +1,4 @@
-exports.Account = class Account {
+export class Account {
   constructor(clerk) {
     this._balance = 0;
     this._clerk = clerk;
@@ -18,4 +18,4 @@ exports.Account = class Account {
   getBalance() {
     return this._balance;
   }
-};
+}

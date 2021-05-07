@@ -1,5 +1,4 @@
-const { add, subtract } = require('./pure');
-
+import { add, subtract } from './pure.js';
 let actual;
 let expected;
 

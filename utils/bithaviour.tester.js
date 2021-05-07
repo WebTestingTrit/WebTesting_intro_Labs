@@ -1,4 +1,4 @@
-exports.given = function test(given, scenario) {
+export const given = function test(given, scenario) {
   console.group(`GIVEN: ${given}`);
   try {
     scenario();
@@ -8,7 +8,7 @@ exports.given = function test(given, scenario) {
   console.groupEnd();
 };
 
-exports.when = function test(when, action) {
+export const when = function test(when, action) {
   console.group(`WHEN: ${when}`);
   try {
     action();
@@ -18,7 +18,7 @@ exports.when = function test(when, action) {
   console.groupEnd();
 };
 
-exports.then = function expect(should, actual, expected) {
+export const then = function expect(should, actual, expected) {
   if (actual === expected) {
     console.log(`THEN : ${should} ✅`);
   } else {

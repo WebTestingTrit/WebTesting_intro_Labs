@@ -1,6 +1,5 @@
-const { test, expect } = require('../../utils/bit.tester');
-const { Clerk } = require('./bank/clerk');
-
+import { expect, test } from '../../utils/bit.tester.js';
+import { Clerk } from './bank/clerk.js';
 test('a clerk object calculating a balance', () => {
   const inputCredit = 100;
   const fakeTransactions = {

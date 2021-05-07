@@ -1,4 +1,4 @@
-const { add, subtract } = require('./pure');
+import { add, subtract } from './pure.js';
 
 function test({ given, should, actual, expected }) {
   console.group(given);

@@ -1,5 +1,5 @@
 const tab = '  ';
-let tests = [];
+const tests = [];
 
 const given = (description, fn) => {
   tests.push({ description, fn });

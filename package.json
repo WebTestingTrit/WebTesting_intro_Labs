@@ -8,6 +8,7 @@
     "url": "https://twitter.com/albertobasalo"
   },
   "homepage": "https://github.com/AtomicBuilders/webtesting_intro_labs#readme",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AtomicBuilders/webtesting_intro_labs.git"

@@ -1,5 +1,6 @@
-const { given, when, then } = require('../../utils/bithaviour.tester');
-const { Account } = require('./bank/account');
+import { given, then, when } from '../../utils/bithaviour.tester.js';
+import { Account } from './bank/account.js';
+
 given('the account is in credit AND the amount is a whole number', () => {
   const sut = new Account(10);
   const input = 10;

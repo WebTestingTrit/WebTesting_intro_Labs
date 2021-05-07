@@ -1,5 +1,5 @@
-const { test, expect } = require('../../utils/bit.tester');
-const { Transactions } = require('./bank/transactions');
+import { expect, test } from '../../utils/bit.tester.js';
+import { Transactions } from './bank/transactions.js';
 
 test('a transactions manager asked to store one transaction', () => {
   const sut = new Transactions();
