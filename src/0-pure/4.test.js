@@ -1,4 +1,4 @@
-import { test } from '../../utils/pure.tester.js';
+import { test } from '../../utils/0-pure.tester.js';
 import { add, subtract } from './pure.js';
 
 let assert;

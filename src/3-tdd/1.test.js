@@ -1,4 +1,4 @@
-import { expect, test } from '../../utils/bit.tester.js';
+import { expect, test } from '../../utils/1-bit.tester.js';
 import { Account } from './bank/1.account.js';
 
 test('a new account with a deposit', () => {
