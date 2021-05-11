@@ -1,6 +1,6 @@
 {
   "name": "webtesting_intro_labs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Fundamental testing laboratory",
   "author": {
     "name": "Alberto Basalo",
@@ -18,8 +18,9 @@
     "url": "https://github.com/AtomicBuilders/webtesting_intro_labs/issues"
   },
   "scripts": {
-    "release": "standard-version",
     "format:fix": "npm run format -- --write",
+    "prerelease": "standard-version ",
+    "release": "git push --follow-tags origin master",
     "updates": "ncu -u"
   },
   "devDependencies": {
