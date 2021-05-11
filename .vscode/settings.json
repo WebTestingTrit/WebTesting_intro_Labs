@@ -28,6 +28,19 @@
   "html.format.enable": true,
   "html.format.wrapLineLength": 100,
   "eslint.validate": ["javascript"],
-  "spellright.language": ["en"],
-  "spellright.documentTypes": ["markdown", "latex", "plaintext", "javascript"]
+  "spellright.language": [
+    "en",
+    "es"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext",
+    "javascript"
+  ],
+  "spellright.parserByClass": {
+    "code-runner-output": {
+      "parser": "plain"
+    }
+  }
 }
