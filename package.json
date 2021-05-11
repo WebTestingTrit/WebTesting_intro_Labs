@@ -23,11 +23,11 @@
     "updates": "ncu -u"
   },
   "devDependencies": {
-    "eslint": "^7.25.0",
+    "eslint": "^7.26.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "prettier": "^2.2.1",
-    "npm-check-updates": "^11.5.10",
+    "prettier": "^2.3.0",
+    "npm-check-updates": "^11.5.11",
     "standard-version": "^9.3.0"
   }
 }
