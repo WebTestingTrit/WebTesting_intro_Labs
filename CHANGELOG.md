@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/AtomicBuilders/webtesting_intro_labs/compare/v2.0.1...v2.1.0) (2021-05-11)
+
+
+### Features
+
+* update samples ([41f15e0](https://github.com/AtomicBuilders/webtesting_intro_labs/commit/41f15e08db7d2a10554b3dff8c3430c68334a468))
+
 ### [2.0.1](https://github.com/AtomicBuilders/webtesting_intro_labs/compare/v2.0.0...v2.0.1) (2021-05-11)
 
 ## 2.0.0 (2021-05-07)
