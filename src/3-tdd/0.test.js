@@ -1,5 +1,6 @@
 import { expect, test } from '../../utils/1-bit.tester.js';
 import { Account } from './bank/0.account.js';
+
 test('a new account with no constructor parameter', () => {
   const sut = new Account();
   const actual = sut !== undefined;
@@ -34,3 +35,4 @@ test('a new account with no credit ', () => {
   const expected = 100;
   expect('have a default credit', actual, expected);
 });
+
