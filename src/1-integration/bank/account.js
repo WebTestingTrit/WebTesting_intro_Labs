@@ -1,6 +1,7 @@
-const { Clerk } = require('./clerk');
-const { Transactions } = require('./transactions');
-exports.Account = class Account {
+import { Clerk } from './clerk.js';
+import { Transactions } from './transactions.js';
+
+export class Account {
   constructor(credit = 100) {
     this._transactions = new Transactions();
     this._clerk = new Clerk(credit, this._transactions.getAll());
@@ -18,4 +19,4 @@ exports.Account = class Account {
   getBalance() {
     return this._clerk.calculateBalance();
   }
-};
+}

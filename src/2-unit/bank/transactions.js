@@ -1,4 +1,4 @@
-exports.Transactions = class Transactions {
+export class Transactions {
   constructor() {
     this._transactions = this.load();
   }
@@ -11,4 +11,4 @@ exports.Transactions = class Transactions {
   getAll() {
     return this._transactions;
   }
-};
+}

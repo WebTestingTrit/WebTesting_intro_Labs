@@ -1,6 +1,6 @@
 {
   "name": "webtesting_intro_labs",
-  "version": "1.1.1",
+  "version": "2.1.1",
   "description": "Fundamental testing laboratory",
   "author": {
     "name": "Alberto Basalo",
@@ -8,6 +8,7 @@
     "url": "https://twitter.com/albertobasalo"
   },
   "homepage": "https://github.com/AtomicBuilders/webtesting_intro_labs#readme",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AtomicBuilders/webtesting_intro_labs.git"
@@ -17,16 +18,17 @@
     "url": "https://github.com/AtomicBuilders/webtesting_intro_labs/issues"
   },
   "scripts": {
-    "release": "standard-version",
     "format:fix": "npm run format -- --write",
-    "check-updates": "ncu -u"
+    "prerelease": "standard-version ",
+    "release": "git push --follow-tags origin master",
+    "updates": "ncu -u"
   },
   "devDependencies": {
-    "eslint": "^7.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.0.5",
-    "npm-check-updates": "^7.0.1",
-    "standard-version": "^8.0.1"
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.0",
+    "npm-check-updates": "^11.5.11",
+    "standard-version": "^9.3.0"
   }
 }

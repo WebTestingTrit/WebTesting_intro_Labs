@@ -15,29 +15,32 @@
     "statusBar.background": "#f9e64f",
     "statusBarItem.hoverBackground": "#f7df1e",
     "statusBar.foreground": "#15202b",
-    "activityBar.activeBackground": "#fbed80",
-    "statusBar.border": "#f9e64f",
-    "titleBar.border": "#f9e64f"
+    "activityBar.activeBackground": "#fbed80"
   },
   "peacock.color": "#f9e64f",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Eva Dark Bold",
+  "workbench.colorTheme": "GitHub Light Default",
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "prettier.useEditorConfig": true,
-  "prettier.disableLanguages": ["vue", "xlf", "xml", "html"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "html.format.wrapAttributes": "force-aligned",
   "html.format.enable": true,
   "html.format.wrapLineLength": 100,
   "eslint.validate": ["javascript"],
   "spellright.language": [
-    "en"
+    "en",
+    "es"
   ],
   "spellright.documentTypes": [
     "markdown",
     "latex",
     "plaintext",
     "javascript"
-  ]
+  ],
+  "spellright.parserByClass": {
+    "code-runner-output": {
+      "parser": "plain"
+    }
+  }
 }

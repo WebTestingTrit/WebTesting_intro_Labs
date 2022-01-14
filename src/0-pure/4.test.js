@@ -1,5 +1,5 @@
-const { test } = require('../../utils/pure.tester');
-const { add, subtract } = require('./pure');
+import { test } from '../../utils/0-pure.tester.js';
+import { add, subtract } from './pure.js';
 
 let assert;
 

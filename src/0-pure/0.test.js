@@ -1,4 +1,4 @@
-const { add, subtract } = require('./pure');
+import { add, subtract } from './pure.js';
 
 console.group(`It should sum 1 and 2 and returns 3`);
 if (add(1, 2) === 3) {
