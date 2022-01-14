@@ -1,21 +1,21 @@
 {
   "name": "webtesting_intro_labs",
-  "version": "2.1.1",
+  "version": "1.0.0",
   "description": "Fundamental testing laboratory",
   "author": {
     "name": "Alberto Basalo",
-    "email": "learn@bitademy.com",
+    "email": "albertobasalo@hotmail.com",
     "url": "https://twitter.com/albertobasalo"
   },
-  "homepage": "https://github.com/AtomicBuilders/webtesting_intro_labs#readme",
+  "homepage": "https://github.com/WebTestingTrit/WebTesting_intro_Labs#readme",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AtomicBuilders/webtesting_intro_labs.git"
+    "url": "git+https://github.com/WebTestingTrit/WebTesting_intro_Labs.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AtomicBuilders/webtesting_intro_labs/issues"
+    "url": "https://github.com/WebTestingTrit/WebTesting_intro_Labs/issues"
   },
   "scripts": {
     "format:fix": "npm run format -- --write",
