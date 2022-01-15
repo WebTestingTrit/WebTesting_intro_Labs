@@ -19,8 +19,8 @@
   },
   "scripts": {
     "format:fix": "npm run format -- --write",
-    "prerelease": "standard-version ",
-    "release": "git push --follow-tags origin master",
+    "predeploy": "standard-version ",
+    "deploy": "git push --follow-tags origin main",
     "updates": "ncu -u"
   },
   "devDependencies": {
