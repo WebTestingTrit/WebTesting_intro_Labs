@@ -1,4 +1,4 @@
-import { given, then, when } from '../../utils/2-bithaviour.tester.js';
+import { given, then, when } from '../../utils/2-bithavior.tester.js';
 import { Account } from './bank/account.js';
 
 given('the account is in credit AND the amount is a whole number', () => {

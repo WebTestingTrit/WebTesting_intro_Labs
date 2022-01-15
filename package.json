@@ -1,7 +1,7 @@
 {
-  "name": "webtesting_intro_labs",
+  "name": "web-testing_intro_labs",
   "version": "1.0.0",
-  "description": "Fundamental testing laboratory",
+  "description": "Ejemplos de introducción al testing",
   "author": {
     "name": "Alberto Basalo",
     "email": "albertobasalo@hotmail.com",
@@ -24,11 +24,11 @@
     "updates": "ncu -u"
   },
   "devDependencies": {
-    "eslint": "^7.26.0",
+    "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "prettier": "^2.3.0",
-    "npm-check-updates": "^11.5.11",
-    "standard-version": "^9.3.0"
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "npm-check-updates": "^12.1.0",
+    "standard-version": "^9.3.2"
   }
 }
