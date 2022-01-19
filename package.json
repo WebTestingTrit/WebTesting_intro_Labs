@@ -18,7 +18,6 @@
     "url": "https://github.com/WebTestingTrit/WebTesting_intro_Labs/issues"
   },
   "scripts": {
-    "format:fix": "npm run format -- --write",
     "predeploy": "standard-version ",
     "deploy": "git push --follow-tags origin main",
     "updates": "ncu -u"
